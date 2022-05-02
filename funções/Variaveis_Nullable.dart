@@ -1,10 +1,13 @@
 void main() {
-  saudacoes('Kevin');
+  saudacoes('Kevin', cliente: 'Maria');
 }
 
-void saudacoes(String nome, {bool mostrarAgora = true}) {
+void saudacoes(String nome, {bool mostrarAgora = true, String? cliente}) {
   print('Saudações do $nome');
-  print('Seja bem-vindo(a)! ');
+
+  if(cliente != null) {
+    print('Seja bem-vindo(a)! $cliente');
+  }
 
   if (mostrarAgora) {
     print('Agora: ${agora()}');
