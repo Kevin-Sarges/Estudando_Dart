@@ -15,4 +15,5 @@ void main() {
   num numero2 = 10;
   print(numero1);
   print(numero2);
+  print(variaval);
 }
